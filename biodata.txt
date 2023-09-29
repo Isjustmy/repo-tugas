@@ -1,1 +1,5 @@
-Nama: Ibnu Fajar
+Biodata Diri
+ - Nama: Ibnu Fajar
+ - Umur: 17
+ - Jenis Kelamin: Laki-Laki
+ - Alamat: Perum bukit asri
