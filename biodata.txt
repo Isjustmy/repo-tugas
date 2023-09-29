@@ -3,3 +3,4 @@ Biodata Diri
  - Umur: 17
  - Jenis Kelamin: Laki-Laki
  - Alamat: Perum bukit asri
+ - Hobi: ngoprek windows/android
