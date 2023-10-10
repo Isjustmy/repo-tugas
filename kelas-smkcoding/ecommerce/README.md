@@ -10,6 +10,13 @@ Clone projek ini dengan cara:
 git clone https://github.com/Isjustmy/repo-tugas
 ```
 
+lalu masuk ke folder ecommerce:
+
+```bash
+# git bash
+cd repo-tugas/kelas-smkcoding/ecommerce
+```
+
 ## Setup
 
 Lalu ketikkan perintah dibawah:
