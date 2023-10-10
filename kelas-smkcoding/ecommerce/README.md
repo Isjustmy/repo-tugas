@@ -1,10 +1,18 @@
-# Nuxt 3 Minimal Starter
+# Inisialisasi
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
+
+## Clone repo
+Clone projek ini dengan cara:
+
+```bash
+git clone https://github.com/Isjustmy/repo-tugas
+```
+
 ## Setup
 
-Make sure to install the dependencies:
+Lalu ketikkan perintah dibawah:
 
 ```bash
 # npm
@@ -22,7 +30,9 @@ bun install
 
 ## Development Server
 
-Start the development server on `http://localhost:3000`:
+URL development server: `http://localhost:3000`:
+
+ketik terlebih dahulu perintah dibawah:
 
 ```bash
 # npm
