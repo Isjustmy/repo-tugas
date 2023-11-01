@@ -1,10 +1,29 @@
 <script setup lang="ts">
+import type { Products } from "~/types/products";
 const props = defineProps({
   product: {
     type: Object,
     default: {},
   },
 });
+const oneProduct = ref(props.product);
+const addCart = () => {
+  oneProduct.value.isCart = !oneProduct.value.isCart;
+  let localStorageData = localStorage.getItem("products");
+  let productOfCart: Products[] = [];
+  if (localStorageData) {
+    productOfCart = JSON.parse(localStorageData);
+  }
+  if (oneProduct.value.isCart) {
+    productOfCart.push(oneProduct.value);
+    localStorage.setItem("products", JSON.stringify(productOfCart));
+  } else {
+    productOfCart = productOfCart.filter(
+      (item) => item.id !== oneProduct.value.id
+    );
+    localStorage.setItem("products", JSON.stringify(productOfCart));
+  }
+};
 </script>
 
 <template>
@@ -32,7 +51,9 @@ const props = defineProps({
           <h3 class="text-4xl font-light mb-3">${{ props.product.price }}</h3>
           <p class="mb-10">{{ props.product.description }}</p>
           <div class="flex flex-col gap-4">
-            <button class="btn btn-outline btn-primary">Add to cart</button>
+            <button class="btn btn-outline btn-primary" @click="addCart">
+              Add to cart
+            </button>
           </div>
         </div>
       </div>
